@@ -1,0 +1,11 @@
+global_costmap:
+   global_frame: map                   # (default map) The global frame for the costmap to operate in. 
+   robot_base_frame: robot_footprint   # (default base_link) The name of the frame for the base link of the robot.
+   update_frequency: 10.0              # (double, default 5.0) The frequency in Hz for the map to be updated.
+   publish_frequency: 10.0             # (double, default 0.0) The frequency in Hz for the map to be publish display information.
+   width: 30.0                         # (int, default 10) The width of the map in meters.
+   height: 30.0                        # (int, default 10) The height of the map in meters.
+   resolution: 0.02                    # (double, default 0.05) The resolution of the map in meters/cell. Hokuyo URG-04LX-UG01 laser scanner has metric resolution of 0.01mm
+   static_map: true
+   rolling_window: false               # (bool, default false) Whether or not to use a rolling window version of the costmap. If the static_map parameter is set to true, this parameter must be set to false.
+
