@@ -26,20 +26,28 @@ Simulations were carried out in a Gazebo environment with the use of RViz for vi
 ## Results 
 ### Benchmark Model - udacity_bot
 The benchmark model was able to successfully reach the goal position in about 24 minutes without any major deviations from the global path. Notably, the particle filter converges within the first minute and remains fairly consistent throughout the robot's path. The images below display the progress that udacity\_bot made and the path it took to get to the navigation goal. 
+
 [image_5]: ./images/b1.png
 ![alt text][image_5]
+
 [image_6]: ./images/b2.png
 ![alt text][image_6]
+
 [image_7]: ./images/b3.png
 ![alt text][image_7]
+
 ### Personal Model - chesh_bot
 Chesh-bot reached the navigation goal in about minutes. During the course of navigation. Similar to udacity bot, it was fairly accurate in following the global path while it was in the confined zone, but once it got to a more open area it deviated from the global path. Particle filters here also converged within the first minute. The images below display the progress that chesh bot made and the path it took to get to the navigation goal.
+
 [image_8]: ./images/p1.png
 ![alt text][image_8]
+
 [image_9]: ./images/p2.png
 ![alt text][image_9]
+
 [image_10]: ./images/p3.png
 ![alt text][image_10]
+
 ## Discussion
 
 While both robots reached the navigation goal, the bench- mark model clearly took a more direct path and achieved the goal in the time. Given that chesh bot is heavier than udacity bot, the slower motion and greater deviation from the path was expected.
