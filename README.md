@@ -36,9 +36,9 @@ $ rosrun udacity_bot navigation_goal
 
 ```
 # Personal Model
-$ roslaunch udacity_bot udacity_world.launch
-$ roslaunch udacity_bot amcl.launch
-$ rosrun udacity_bot navigation_goal
+$ roslaunch chesh_bot chesh_world.launch
+$ roslaunch chesh_bot amcl.launch
+$ rosrun chesh_bot navigation_goal
 ```
 
 ## Results 
