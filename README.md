@@ -14,8 +14,10 @@ In this paper, both Kalman Filters and the Monte Carlo Localization algorithms a
 
 [image_2]: ./images/benchmark.png
 ![alt text][image_2]
+
 [image_3]: ./images/personal.png
 ![alt text][image_3]
+
 [image_4]: ./images/maze.png
 ![alt text][image_4]
 
