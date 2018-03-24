@@ -10,7 +10,7 @@ Two different mobile robot models are described and evaluated for performance in
 
 One of the most integral, yet challenging components of a mobile robot is the ability to navigate through space. In order to successfully navigate, a robot must accomplish 4 sequential tasks. It must first perceive the world around it using sensors and then interpret sensor data to draw meaningful information. Second, the robot must be able to efficiently localize itself, or determine its position and pose within a mapped environment. The third and fourth tasks are cognition and and motor control – the robot must decide its next action and ultimately actuate movement in the desired direction.
 
-In this paper, both Kalman Filters and the Monte Carlo Localization algorithms are explored, and ultimately the Adaptive MCL is implemented to localize two different mobile robots in simulation. Through experimentation, the various parameters of the algorithm are tuned to optimize localization. 
+In this paper, both Kalman Filters and the Monte Carlo Localization algorithms are explored, and ultimately the Adaptive MCL is implemented to localize two different mobile robots in simulation. Through experimentation, the various parameters of the algorithm are tuned to optimize localization. The images below show the benchmark model, the personal model and the maze they both navigated. 
 
 [image_2]: ./images/benchmark.png
 ![alt text][image_2]
@@ -24,6 +24,22 @@ In this paper, both Kalman Filters and the Monte Carlo Localization algorithms a
 ## Simulations 
 
 Simulations were carried out in a Gazebo environment with the use of RViz for visualization of different aspects of the mobile robot and world. The following sections will discuss the performance of each robot individually, in addition to a description of the robot model design, packages used, and the parameters chosen for the robot to properly localize itself. The performance of the robots is evaluated through simulations, run using Gazebo and Rviz.
+
+The project was conducted on an Ubuntu Virtual Machine with ROS installed. The code below uses 3 separate terminals to launch the simulation and navigate to the goal:
+
+```
+# Benchmark Model
+$ roslaunch udacity_bot udacity_world.launch
+$ roslaunch udacity_bot amcl.launch
+$ rosrun udacity_bot navigation_goal
+```
+
+```
+# Personal Model
+$ roslaunch udacity_bot udacity_world.launch
+$ roslaunch udacity_bot amcl.launch
+$ rosrun udacity_bot navigation_goal
+```
 
 ## Results 
 ### Benchmark Model - udacity_bot
@@ -39,7 +55,7 @@ The benchmark model was able to successfully reach the goal position in about 24
 ![alt text][image_7]
 
 ### Personal Model - chesh_bot
-Chesh-bot reached the navigation goal in about minutes. During the course of navigation. Similar to udacity bot, it was fairly accurate in following the global path while it was in the confined zone, but once it got to a more open area it deviated from the global path. Particle filters here also converged within the first minute. The images below display the progress that chesh bot made and the path it took to get to the navigation goal.
+Chesh_bot reached the navigation goal in about minutes. During the course of navigation. Similar to udacity bot, it was fairly accurate in following the global path while it was in the confined zone, but once it got to a more open area it deviated from the global path. Particle filters here also converged within the first minute. The images below display the progress that chesh_bot made and the path it took to get to the navigation goal.
 
 [image_8]: ./images/p1.png
 ![alt text][image_8]
