@@ -50,6 +50,9 @@ Chesh-bot reached the navigation goal in about minutes. During the course of nav
 [image_10]: ./images/p3.png
 ![alt text][image_10]
 
+[image_11]: ./images/p4.png
+![alt text][image_11]
+
 ## Discussion
 
 While both robots reached the navigation goal, the bench- mark model clearly took a more direct path and achieved the goal in the time. Given that chesh bot is heavier than udacity bot, the slower motion and greater deviation from the path was expected.
