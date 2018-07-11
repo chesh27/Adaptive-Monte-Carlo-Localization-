@@ -76,5 +76,6 @@ The placement of the laser rangefinder likely had an effect on the performance o
 
 ## Conclusion / Future Work
 
+
 The localization results are reasonable for both models. The benchmark model as well as the personal model show convergence of the particle filters within the first half minute of localization, and remain clustered throughout the path, indicating that AMCL is working effectively. The bench- mark model reaches the goal in about 26 minutes while the personal model takes about 35 minutes. The benchmark model follows a fairly smooth path throughout its journey. The personal model follows a smooth path when bounded by walls, but deviates considerably in open space.
 The project achieved its goals. However, there is great scope for improvement. One could tune the parameters further for the personal model to ensure it reaches the goal in a more straightforward manner. It would also be very inter- esting to deploy the models on hardware and apply it to a range of commercial products. For example, medical nano- robots could exploit localization and navigation tools to efficiently navigate the bloodstream and provide life-saving medication. The possibilities for future work in this field are virtually endless.
